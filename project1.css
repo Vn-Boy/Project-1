@@ -107,11 +107,8 @@ body {
 main {
   padding: 0 80px;
 }
-#nobita {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 4px;
-}
+
+/*table*/
 table,
 tr,
 td,
@@ -119,18 +116,8 @@ th {
   border: 5px red solid;
   border-collapse: collapse;
 }
-.nobita-general {
-  border: 4px solid black;
-  display: flex;
-}
-.nobita-quote {
-  background: yellow;
-  border: 5px solid black;
-  box-shadow: 5px 10px 8px #888888;
-  padding: 12px;
-  clear: both;
-  position: relative;
-}
+/*table*/
+
 .psudo {
   position: absolute;
   right: 0;
@@ -155,6 +142,29 @@ th {
   text-align: center;
   font-weight: bolder;
 }
+
+/*============================================================
+charaters
+============================================================*/
+
+#nobita {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 4px;
+}
+.nobita-general {
+  border: 4px solid black;
+  display: flex;
+}
+.nobita-quote {
+  background: yellow;
+  border: 5px solid black;
+  box-shadow: 5px 10px 8px #888888;
+  padding: 12px;
+  clear: both;
+  position: relative;
+}
+
 #Shizuka {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -165,6 +175,15 @@ th {
   border: 4px solid black;
   display: flex;
 }
+.shizuka-quote {
+  background: pink;
+  border: 5px solid black;
+  box-shadow: 5px 10px 8px #888888;
+  padding: 12px;
+  clear: both;
+  position: relative;
+}
+
 #doraemon {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -176,7 +195,7 @@ th {
   display: flex;
 }
 .doraemon-quote {
-  background: yellow;
+  background: blue;
   border: 5px solid black;
   box-shadow: 5px 10px 8px #888888;
   padding: 12px;
@@ -194,6 +213,15 @@ th {
   border: 4px solid black;
   display: flex;
 }
+.suneo-quote {
+  background: lightblue;
+  border: 5px solid black;
+  box-shadow: 5px 10px 8px #888888;
+  padding: 12px;
+  clear: both;
+  position: relative;
+}
+
 #chaien {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -203,4 +231,56 @@ th {
 .chaien-general {
   border: 4px solid black;
   display: flex;
+}
+.chaien-quote {
+  background: orange;
+  border: 5px solid black;
+  box-shadow: 5px 10px 8px #888888;
+  padding: 12px;
+  clear: both;
+  position: relative;
+}
+
+/*============================================================
+table colors for each characters
+============================================================*/
+
+.hk-nobita {
+  background: #f1970d;
+}
+.table-nobita tr th,
+.table-nobita tr td {
+  border-color: #f1970d;
+}
+
+.hk-shizuka {
+  background: #e6aad4;
+}
+.table-shizuka tr th,
+.table-shizuka tr td {
+  border-color: #e6aad4;
+}
+
+.hk-doraemon {
+  background: #5a8bdb;
+}
+.table-doraemon tr th,
+.table-doraemon tr td {
+  border-color: #5a8bdb;
+}
+
+.hk-suneo {
+  background: #00f1e9;
+}
+.table-suneo tr th,
+.table-suneo tr td {
+  border-color: #00f1e9;
+}
+
+.hk-chaien {
+  background: #ffb668;
+}
+.table-chaien tr th,
+.table-chaien tr td {
+  border-color: #ffb668;
 }
