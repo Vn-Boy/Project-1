@@ -1,7 +1,8 @@
 @import url(https://fonts.bunny.net/css?family=arbutus:400);
 @import url(https://fonts.bunny.net/css?family=atomic-age:400);
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -81,6 +82,17 @@ body {
   border-radius: 4px;
   top: 4.375em;
   margin-bottom: 70px;
+  opacity:0;
+  animation-name: main;
+  animation-duration: 6s;
+  animation-delay: 4.6s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+}
+@keyframes main{
+    from {opacity:0;}
+    to {opacity:1;}
 }
 .Open-slide svg {
   padding: 24px 16px;
@@ -106,10 +118,22 @@ body {
   font-family: "Atomic Age", display;
   color: #e8d8a5;
   font-size: 2em;
+  
 }
 main {
   padding: 0 80px;
+ opacity: 0;
+ animation-name: k1;
+ animation-duration: 6s;
+ animation-delay:4s;
+ animation-timing-function: linear;
+ animation-fill-mode: forwards;
 }
+@keyframes k1 {
+    from {opacity:0}
+    to {opacity:1}
+}
+
 
 /*table*/
 table,
@@ -287,34 +311,80 @@ table colors for each characters
 .table-chaien tr td {
   border-color: #ffb668;
 }
+.intro {
+    
+width:100%;
+   height:100%;
+   position: absolute;
+   top:70px;
+   background-image: url('making.gif');
+   background-size: 500px 300px;
+   background-repeat: no-repeat;
+   background-position: center;
+   animation-name: test;
+   animation-duration: 4s;
+   animation-fill-mode: forwards;
+   animation-timing-function: linear;
 
-/*============================================================
-others dropdown
-============================================================*/
-.dropdown {
-  transform: translateX(100%);
-  opacity: 0;
-  transition: 300ms linear;
+   
+}
+@keyframes test {
+    0% {  background-size:500px 300px}
+    25% { background-size: 700px 400px}
+    50% {  background-size: 850px 450px}
+    68% {  background-size: 900px 500px}
+    85% { background-size: 950px 550px}
+    100% {  background-size: 1000px 600px}
 
-  background-image: url("moreuseful.png");
-  text-align: center;
-  padding: 0 20px;
-  border: 5px solid #e1d9c9;
+}
+.intro h1 {
+    color: #f0b0bc;
+    font-family: 'DynaPuff', cursive;
+    animation-name: h1;
+    position: absolute;
+    top:0;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+}
+@keyframes h1 {
+    0% { top:0px; background-size:500px 300px}
+    25% { top:100px;left:0; background-size: 700px 400px}
+    50% { top:200px; left:100px; background-size: 850px 450px}
+    68% { top:300px; left:200px; background-size: 900px 500px}
+    85% {top:300px; left:350px; background-size: 950px 550px}
+    100% { top:200px;left:350px; background-size: 1000px 600px}
 
-  position: absolute;
-  right: 0;
-  top: 70px;
 }
 
-.dropdown a {
-  text-decoration: none;
+.intro div {
+    position: absolute;
+    left:480px;
+    top:-120px;
+    opacity:0;
+    animation-name: img;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    transition: .9s;
 
-  margin-bottom: 10px;
-  padding: 10px 0;
-  border-bottom: 2px solid white;
 }
+@keyframes img {
+    from {opacity: 0}
+    To { opacity:1}
+}
+.container-intro {
+    opacity:1;
+    animation-name: intro;
+    animation-delay: 4.6s;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 
-.dropdown-hover:hover .dropdown {
-  transform: translateX(0%);
-  opacity: 1;
+}
+@keyframes intro{
+    from {opacity:1}
+    to { opacity:0}
 }
