@@ -1,210 +1,206 @@
 @import url(https://fonts.bunny.net/css?family=arbutus:400);
 @import url(https://fonts.bunny.net/css?family=atomic-age:400);
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin:0;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
 }
 .nav-bar {
-    background-color: crimson;
-    height:70px;
-    position: fixed;
-   
-    z-index: 1000;
-    width:100%;
-    
-    padding:0;
-    background-image: url('moreuseful.png');
-    background-position: bottom; ;
-    background-repeat: no-repeat;
-    background-size: cover;
- 
-    font-family: 'Arbutus', display;
+  background-color: crimson;
+  height: 70px;
+  position: fixed;
+
+  z-index: 1000;
+  width: 100%;
+
+  padding: 0;
+  background-image: url("moreuseful.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: "Arbutus", display;
 }
 .nav-bar ul {
-    list-style: none;
-    padding:0 0 0 0;
+  list-style: none;
+  padding: 0 0 0 0;
 }
 .nav-bar-stat a:hover {
-    background: black;
+  background: black;
 }
 .nav-bar-hidden {
-    height:100%;
-    width:0;
-    position:fixed;
-    z-index:1;
-    top:0;
-    left:0;
-    opacity: 0.9;
-    overflow-x: hidden;
-    background:#111;
-    padding-top:100px;
-    transition:0.5s;
-    
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  overflow-x: hidden;
+  background: #111;
+  padding-top: 100px;
+  transition: 0.5s;
 }
 .nav-bar-stat {
-    float:right;
-    display:flex;
-    height:70px;
-   
-    margin-top:0;
-    padding:0 16px;
+  float: right;
+  display: flex;
+  height: 70px;
 
+  margin-top: 0;
+  padding: 0 16px;
 }
 .nav-bar-stat a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 27px 16px;
-    padding-bottom:24px;
-    font-size:16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 27px 16px;
+  padding-bottom: 24px;
+  font-size: 16px;
+  text-decoration: none;
 }
 .nav-bar-hidden a {
-    text-decoration: none;
-    display:block;
-    padding: 14px 16px;
-    font-size:17px;
-    text-align: center;
-
+  text-decoration: none;
+  display: block;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-align: center;
 }
 .nav-bar-hidden {
-    margin-top:0;
+  margin-top: 0;
 }
 #main {
-    text-align: center;
-    background-image: url('doraemon.jpg');
-    background-size: cover;
-    height:450px;
-    z-index:0;
-    position: relative;
-    border: 5px solid #E1D9C9;
-    border-radius: 4px;
-    top:4.375em;
-    margin-bottom:70px;
+  text-align: center;
+  background-image: url("doraemon.jpg");
+  background-size: cover;
+  height: 450px;
+  z-index: 0;
+  position: relative;
+  border: 5px solid #e1d9c9;
+  border-radius: 4px;
+  top: 4.375em;
+  margin-bottom: 70px;
 }
 .Open-slide svg {
-    padding: 24px 16px;
+  padding: 24px 16px;
 }
 .nav-bar-hidden .btn-close {
-    position: absolute;
-    right:0;
-    top:50px;
-    font-size:40px;
-    color:white;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  font-size: 40px;
+  color: white;
 }
- .btn-close:hover {
-    color:red;
+.btn-close:hover {
+  color: red;
 }
- .btn-close:active{
-    color:red;
+.btn-close:active {
+  color: red;
 }
 #main h1 {
-    margin:0;
-    position: absolute;
-    top:27%;
-    left:21%;
-    font-family: 'Atomic Age', display;
-    color:#E8D8A5;
-    font-size: 2em;
+  margin: 0;
+  position: absolute;
+  top: 27%;
+  left: 21%;
+  font-family: "Atomic Age", display;
+  color: #e8d8a5;
+  font-size: 2em;
 }
 main {
-    padding:0 80px;
+  padding: 0 80px;
 }
 #nobita {
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap:4px;
-
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 4px;
 }
- table,tr,td,th {
+table,
+tr,
+td,
+th {
   border: 5px red solid;
   border-collapse: collapse;
 }
 .nobita-general {
-    border: 4px solid black;
-   display:flex;
-   
-   
+  border: 4px solid black;
+  display: flex;
 }
 .nobita-quote {
-    background: yellow;
-    border:5px solid black;
-    box-shadow: 5px 10px 8px #888888;
-    padding:12px;
-    clear: both;
-    position: relative;
+  background: yellow;
+  border: 5px solid black;
+  box-shadow: 5px 10px 8px #888888;
+  padding: 12px;
+  clear: both;
+  position: relative;
 }
 .psudo {
-    position:absolute;
-    right:0;
-    top:80px;
+  position: absolute;
+  right: 0;
+  top: 80px;
 }
 .hk {
-    background:red;
-    width:425px;
-    text-align:center;
-    color:whitesmoke;
+  background: red;
+  width: 425px;
+  text-align: center;
+  color: whitesmoke;
 }
 .hk p {
-    margin-bottom:0;
+  margin-bottom: 0;
 }
 .hk h1 {
-    margin-top:0;
+  margin-top: 0;
 }
 .img-container {
-   padding:0 10px;
+  padding: 0 10px;
 }
 .img-container aside {
-    text-align:center;
-    font-weight: bolder;
+  text-align: center;
+  font-weight: bolder;
 }
 #Shizuka {
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap:4px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 4px;
+  margin-top: 20px;
 }
 .shizuka-general {
-    border: 4px solid black;
-   display:flex;
+  border: 4px solid black;
+  display: flex;
 }
 #doraemon {
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap:4px;
-    margin-top: 20px;
-
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 4px;
+  margin-top: 20px;
 }
 .doraemon-general {
-    border: 4px solid black;
-   display:flex;
+  border: 4px solid black;
+  display: flex;
 }
 .doraemon-quote {
-    background: yellow;
-    border:5px solid black;
-    box-shadow: 5px 10px 8px #888888;
-    padding:12px;
-    clear: both;
-    position: relative; }
+  background: yellow;
+  border: 5px solid black;
+  box-shadow: 5px 10px 8px #888888;
+  padding: 12px;
+  clear: both;
+  position: relative;
+}
 
-#suneo
-{
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap:4px;
-    margin-top: 20px;
+#suneo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 4px;
+  margin-top: 20px;
 }
 .suneo-general {
-    border: 4px solid black;
-   display:flex;
+  border: 4px solid black;
+  display: flex;
 }
 #chaien {
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap:4px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 4px;
+  margin-top: 20px;
 }
-.chaien-general{
-    border: 4px solid black;
-    display:flex;
+.chaien-general {
+  border: 4px solid black;
+  display: flex;
 }
