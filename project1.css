@@ -1,7 +1,7 @@
 @import url(https://fonts.bunny.net/css?family=arbutus:400);
 @import url(https://fonts.bunny.net/css?family=atomic-age:400);
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -286,4 +286,35 @@ table colors for each characters
 .table-chaien tr th,
 .table-chaien tr td {
   border-color: #ffb668;
+}
+
+/*============================================================
+others dropdown
+============================================================*/
+.dropdown {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 300ms linear;
+
+  background-image: url("moreuseful.png");
+  text-align: center;
+  padding: 0 20px;
+  border: 5px solid #e1d9c9;
+
+  position: absolute;
+  right: 0;
+  top: 70px;
+}
+
+.dropdown a {
+  text-decoration: none;
+
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border-bottom: 2px solid white;
+}
+
+.dropdown-hover:hover .dropdown {
+  transform: translateX(0%);
+  opacity: 1;
 }
